@@ -1,6 +1,14 @@
 {
   "extends": [
     "next/core-web-vitals",
-    "airbnb"
-  ]
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "linebreak-style": "off"
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
