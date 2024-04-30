@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import { cookies } from 'next/headers';
 import { NavigationItems } from '@/components/NavigationItems';
+import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -11,11 +12,13 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+    const token = cookies().get('token');
+
     return (
         <html lang='en'>
             <body className={`${inter.className} antialiased`}>
                 <header className='z-10 px-5 bg-black sticky top-0'>
-                    <NavigationItems />
+                    <NavigationItems token={token} />
                 </header>
                 {children}
             </body>
