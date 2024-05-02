@@ -20,7 +20,7 @@ type OrderData = {
 
 export default async function Orders() {
     const token = cookies().get('token');
-    if (!token) {
+    if (!token?.value) {
         redirect('/auth');
     }
 
