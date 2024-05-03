@@ -82,7 +82,7 @@ export default function Offer() {
                             src={src}
                             alt='meal image'
                             fill={true}
-                            className='object-cover'
+                            className='object-cover cursor-pointer'
                         />
                     </div>
                 ))}
