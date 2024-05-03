@@ -9,7 +9,7 @@ type Props = {
 
 export default function MealType({ url, imgSrc, label }: Props) {
     return (
-        <Link href={url} className='hover:text-[#f2c666]'>
+        <Link href={url} className='hover:text-golden-500'>
             <Image
                 src={imgSrc}
                 height={178}

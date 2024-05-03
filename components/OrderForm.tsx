@@ -10,7 +10,7 @@ function OrderButton({ children }: { children: string }) {
 
     return (
         <button
-            className='my-5 w-full font-bold text-xl text-[#C59938] disabled:text-[#CCC] disabled:cursor-not-allowed'
+            className='my-5 w-full font-bold text-xl text-golden-600 disabled:text-gray-300 disabled:cursor-not-allowed'
             disabled={pending}
             type='submit'
         >
@@ -74,13 +74,13 @@ export function OrderForm() {
     };
 
     return (
-        <section className='my-5 mx-auto w-4/5 sm:w-[500px] text-center shadow border-[#eee] p-2.5'>
+        <section className='my-5 mx-auto w-4/5 sm:w-[500px] text-center shadow p-2.5'>
             {error ? <h2 className='font-bold text-red-600 my-4'>Could not make order. Try again later.</h2> : null}
             {orderSuccess ? <h2 className='font-bold text-green-600 my-4'>Order Success! Your food will arrive soon.</h2> : null}
             <h2 className='font-bold my-4'>Enter your delivery data</h2>
             <form onSubmit={sendOrder}>
                 <input
-                    className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-[#CCC]'
+                    className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-gray-300'
                     type='text'
                     placeholder='Name'
                     name='name'
@@ -89,7 +89,7 @@ export function OrderForm() {
                     value={name}
                 />
                 <input
-                    className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-[#CCC]'
+                    className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-gray-300'
                     type='text'
                     placeholder='Address'
                     name='address'
@@ -98,7 +98,7 @@ export function OrderForm() {
                     value={address}
                 />
                 <input
-                    className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-[#CCC]'
+                    className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-gray-300'
                     type='text'
                     placeholder='Phone Number'
                     name='phoneNumber'
@@ -113,7 +113,7 @@ export function OrderForm() {
                     Payment Method:
                 </label>
                 <select
-                    className='w-4/5 sm:w-[400px] border border-[#CCC] py-1.5 outline-none mb-2.5'
+                    className='w-4/5 sm:w-[400px] border border-gray-300 py-1.5 outline-none mb-2.5'
                     name='paymentMethod'
                     id='paymentMethod'
                     onChange={selectChangeHandler}

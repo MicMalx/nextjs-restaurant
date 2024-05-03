@@ -52,7 +52,7 @@ function MealsList({ mode, menuPart, allMeals, isUserLoggedIn }: MealsListProps)
 
     return (
         <section className='text-center'>
-            {mode ? <div className='mt-[50px] text-[#C59938] text-2xl font-bold '>Order Summary</div> : null}
+            {mode ? <div className='mt-[50px] text-golden-600 text-2xl font-bold '>Order Summary</div> : null}
             {mealsToRender.map((meal) => {
                 if (meal.type === menuPart || mode) {
                     return (
@@ -71,7 +71,7 @@ function MealsList({ mode, menuPart, allMeals, isUserLoggedIn }: MealsListProps)
                 <>
                     <div className='mt-5 text-xl'>Total Price: {totalPrice!.toFixed(1)} $</div>
                     <button
-                        className='p-2.5 m-2.5 font-bold text-xl text-[#C59938] disabled:text-[#CCC] disabled:cursor-not-allowed'
+                        className='p-2.5 m-2.5 font-bold text-xl text-golden-600 disabled:text-gray-300 disabled:cursor-not-allowed'
                         onClick={purchaseHandler}
                         disabled={isUserLoggedIn && !selectedMeals.length}
                         type='button'

@@ -9,7 +9,7 @@ function LoginButton({ children }: { children: string }) {
     const { pending } = useFormStatus();
 
     return (
-        <button type='submit' className='mt-6 w-full font-bold text-xl text-[#5C9210] disabled:text-[#CCC] disabled:cursor-not-allowed' disabled={pending}>
+        <button type='submit' className='mt-6 w-full font-bold text-xl text-[#5C9210] disabled:text-gray-300 disabled:cursor-not-allowed' disabled={pending}>
             {children}
         </button>
     );
@@ -28,28 +28,28 @@ export default function Auth() {
 
     return (
         <main className='sm:mb-[300px]'>
-            <section className='mt-10 mb-5 mx-auto w-4/5 sm:w-[500px] text-center shadow border-[#eee] p-2.5'>
+            <section className='mt-10 mb-5 mx-auto w-4/5 sm:w-[500px] text-center shadow p-2.5'>
                 <form action={dispatch}>
                     <input
                         type='checkbox'
                         checked={isLogin}
                         name='isLogin'
-                        hidden
-                        readOnly
+                        hidden={true}
+                        readOnly={true}
                     />
                     <input
-                        className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-[#CCC]'
+                        className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-gray-300'
                         type='email'
                         placeholder='Email Adress'
                         name='email'
-                        required
+                        required={true}
                     />
                     <input
-                        className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-[#CCC]'
+                        className='w-4/5 sm:w-[400px] p-1.5 my-2.5 outline-none border border-gray-300'
                         type='password'
                         placeholder='Password'
                         name='password'
-                        required
+                        required={true}
                     />
                     {formState?.success === false && (
                         <p className='text-sm text-red-500'>{formState.message}</p>
@@ -60,7 +60,7 @@ export default function Auth() {
                 </form>
                 <button
                     type='button'
-                    className='my-5 font-bold text-xl text-[#C59938]'
+                    className='my-5 font-bold text-xl text-golden-600'
                     onClick={() => setIsLogin((prevState) => !prevState)}
                 >
                     SWITCH TO {isLogin ? 'SIGNUP' : 'LOGIN'}

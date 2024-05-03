@@ -35,7 +35,7 @@ export default async function Orders() {
     }
     return (
         <section className='min-h-[400px]'>
-            <h2 className='my-[30px] text-[#C59938] text-2xl font-bold text-center'>Orders History</h2>
+            <h2 className='my-[30px] text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
             {orders.map((order) => (
                 <Order
                     key={order.id}

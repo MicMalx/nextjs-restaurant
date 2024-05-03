@@ -16,7 +16,7 @@ export default function ReviewCarousel() {
                 // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions
                 <li
                     className={clsx(
-                        { 'bg-[#B47C03]': isSelected },
+                        { 'bg-golden-700': isSelected },
                         { 'bg-black': !isSelected },
                         'w-[10px] h-[10px] mt-4 mx-2 inline-block cursor-pointer relative z-20 top-10',
                     )}

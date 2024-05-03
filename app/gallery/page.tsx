@@ -13,7 +13,7 @@ export default function Gallery() {
                 className='mt-5 mb-10'
             />
             <section className='mt-10 flex flex-col sm:flex-row flex-wrap items-center gap-10'>
-                <Link href='gallery/restaurant' className='hover:text-[#f2c666]'>
+                <Link href='gallery/restaurant' className='hover:text-golden-500'>
                     <Image
                         src='/restaurant/restaurant1.jpg'
                         alt='restaurant image'
@@ -23,7 +23,7 @@ export default function Gallery() {
                     />
                     <div className='mt-4 self-center text-center font-bold'>Restaurant</div>
                 </Link>
-                <Link href='gallery/meals' className='hover:text-[#f2c666]'>
+                <Link href='gallery/meals' className='hover:text-golden-500'>
                     <Image
                         src='/meals/meals02.jpg'
                         alt='restaurant image'
@@ -33,7 +33,7 @@ export default function Gallery() {
                     />
                     <div className='mt-4 self-center text-center font-bold'>Meals</div>
                 </Link>
-                <Link href='gallery/kitchen' className='hover:text-[#f2c666]'>
+                <Link href='gallery/kitchen' className='hover:text-golden-500'>
                     <Image
                         src='/kitchen/kitchen2.jpg'
                         alt='restaurant image'
@@ -43,7 +43,7 @@ export default function Gallery() {
                     />
                     <div className='mt-4 self-center text-center font-bold'>Kitchen</div>
                 </Link>
-                <Link href='gallery/catering' className='hover:text-[#f2c666]'>
+                <Link href='gallery/catering' className='hover:text-golden-500'>
                     <Image
                         src='/catering/catering07.jpg'
                         alt='restaurant image'

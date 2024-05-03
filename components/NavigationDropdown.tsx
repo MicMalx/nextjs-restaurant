@@ -34,12 +34,12 @@ export function NavigationDropdown() {
 
     return (
         <li className={clsx(
-            'group py-2.5 relative cursor-pointer hover:bg-[#282525]',
-            { 'bg-[#282525]': dropdownPaths.includes(pathname) },
+            'group py-2.5 relative cursor-pointer hover:bg-stone-800',
+            { 'bg-stone-800': dropdownPaths.includes(pathname) },
         )}
         >
             <button type='button' className='px-5'>Restauracja</button>
-            <ul className='hidden group-hover:block bg-[#282525] absolute w-full'>
+            <ul className='hidden group-hover:block bg-stone-800 absolute w-full'>
                 <DropdownItem href='/offer' pathname={pathname}>Offer</DropdownItem>
                 <DropdownItem href='/about-us' pathname={pathname}>About Us</DropdownItem>
                 <DropdownItem href='/gallery' pathname={pathname}>Gallery</DropdownItem>

@@ -55,7 +55,7 @@ export function NavigationItems({ token }: { token: RequestCookie | undefined })
                 </span>
             </div>
             <ul className={clsx(
-                'basis-full sm:basis-auto list-none sm:flex flex-col sm:flex-row items-center text-[#f2c666] transition-all ease-in-out duration-300 delay-0',
+                'basis-full sm:basis-auto list-none sm:flex flex-col sm:flex-row items-center text-golden-500 transition-all ease-in-out duration-300 delay-0',
                 { flex: showMobileNav },
                 { hidden: !showMobileNav },
             )}
