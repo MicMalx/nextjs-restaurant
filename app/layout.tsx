@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { cookies } from 'next/headers';
+import Image from 'next/image';
 import { NavigationItems } from '@/components/NavigationItems';
 import './globals.css';
 
@@ -21,6 +22,28 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     <NavigationItems token={token} />
                 </header>
                 {children}
+                <footer className='bg-black py-10'>
+                    <h2 className='text-golden-500 font-bold text-center mb-5'>Restaurant</h2>
+                    <Image
+                        src='/icons/moon-divider.png'
+                        width={35}
+                        height={9.5}
+                        alt='moon divider image'
+                        className='mx-auto mb-5'
+                    />
+                    <div className='text-golden-500 text-center'>
+                        <p>Monday - Wednesday: 10AM - 10PM</p>
+                        <p>Thursday - Saturday: 10AM - 11PM</p>
+                        <p>Sunday: 10AM - 10PM</p>
+                        <br />
+                        <p>129A Pritchard's Rd,</p>
+                        <p>London E2 9AP</p>
+                        <br />
+                        <p>682 734 991 - Restaurant</p>
+                        <p>661 571 373 - Manager</p>
+                        <p>restaurant@gmail.com</p>
+                    </div>
+                </footer>
             </body>
         </html>
     );
