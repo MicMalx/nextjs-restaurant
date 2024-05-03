@@ -73,7 +73,7 @@ function MealsList({ mode, menuPart, allMeals, isUserLoggedIn }: MealsListProps)
                     <button
                         className='p-2.5 m-2.5 font-bold text-xl text-[#C59938] disabled:text-[#CCC] disabled:cursor-not-allowed'
                         onClick={purchaseHandler}
-                        disabled={!selectedMeals.length}
+                        disabled={isUserLoggedIn && !selectedMeals.length}
                         type='button'
                     >
                         {isUserLoggedIn ? 'ORDER NOW' : 'LOGIN TO ORDER'}

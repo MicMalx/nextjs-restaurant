@@ -29,7 +29,7 @@ export default async function Orders() {
         orders = (await axios.get<{ orders: OrderData[] }>(
             'https://friendly-frog-slippers.cyclic.app/api/orders/user',
             { headers: { Authorization: `Bearer ${token?.value}` } },
-        )).data.orders;
+        )).data.orders.reverse();
     } catch (err) {
         return <div>Can not load orders try again later...</div>;
     }
