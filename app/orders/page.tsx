@@ -37,6 +37,9 @@ export default async function Orders() {
         <main className='min-h-content'>
             <section className='pb-8'>
                 <h2 className='my-8 text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
+                {!orders.length && (
+                    <p className='text-center'>You haven't ordered anything yet.</p>
+                )}
                 {orders.map((order) => (
                     <Order
                         key={order.id}
