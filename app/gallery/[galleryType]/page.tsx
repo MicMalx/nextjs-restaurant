@@ -83,7 +83,7 @@ export default async function GalleryType({ params }: { params: { galleryType: s
     }
 
     return (
-        <main className='w-4/5 xl:w-[1200px] mx-auto bg-white min-h-content'>
+        <main className='w-4/5 xl:w-[1200px] mx-auto bg-white min-h-content pt-navbar'>
             <h1 className='text-2xl font-bold mt-10 capitalize'><Link href='/gallery'>Gallery</Link> / {galleryType}</h1>
             <Image
                 src='/icons/section-starter.png'

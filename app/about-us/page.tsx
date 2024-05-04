@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutUs() {
     return (
-        <main className='w-4/5 xl:w-[1200px] mx-auto min-h-content'>
+        <main className='w-4/5 xl:w-[1200px] mx-auto min-h-content pt-navbar'>
             <h1 className='text-2xl font-bold mt-10'>About us</h1>
             <Image
                 src='/icons/section-starter.png'

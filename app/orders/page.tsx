@@ -34,7 +34,7 @@ export default async function Orders() {
         return <div>Can not load orders try again later...</div>;
     }
     return (
-        <main className='min-h-content'>
+        <main className='min-h-content pt-navbar'>
             <section className='pb-8'>
                 <h2 className='my-8 text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
                 {!orders.length && (

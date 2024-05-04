@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang='en'>
             <body className={`${inter.className} antialiased`}>
-                <header className='z-10 px-5 bg-black sticky top-0'>
+                <header className='z-10 px-5 bg-black fixed top-0 w-full'>
                     <NavigationItems token={token} />
                 </header>
                 {children}

@@ -20,6 +20,7 @@ const config: Config = {
                 'golden-800': '#aa6817',
             },
             minHeight: { content: 'calc(100vh - 394px)' },
+            padding: { navbar: '84px' },
         },
     },
     plugins: [],

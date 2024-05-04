@@ -4,7 +4,7 @@ import ReviewCarousel from '@/components/ReviewCarousel';
 
 export default function Home() {
     return (
-        <main className='min-h-content'>
+        <main className='min-h-content pt-navbar'>
             <section>
                 <PhotoCarousel />
             </section>

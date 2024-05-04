@@ -27,7 +27,7 @@ export default function Auth() {
     }, [formState, router]);
 
     return (
-        <main className='min-h-content'>
+        <main className='min-h-content pt-navbar'>
             <section className='mt-10 mb-5 mx-auto w-4/5 sm:w-[500px] text-center shadow p-2.5'>
                 <form action={dispatch}>
                     <input

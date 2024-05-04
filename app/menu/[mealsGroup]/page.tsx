@@ -20,7 +20,7 @@ export default async function MealsGroup({ params }: { params: { mealsGroup: str
     }
 
     return (
-        <main className='min-h-content'>
+        <main className='min-h-content pt-navbar'>
             <MealsList mode='summary' menuPart={mealsGroup as MealType} allMeals={meals} isUserLoggedIn={!!token} />
         </main>
     );
