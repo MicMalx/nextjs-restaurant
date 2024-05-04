@@ -9,11 +9,11 @@ export function NavigationItem({ href, children }: { href: string, children: Rea
     const pathname = usePathname();
     return (
         <li className={clsx(
-            'px-5 py-2.5 hover:bg-stone-800',
+            'hover:bg-stone-800',
             { 'bg-stone-800': pathname === href },
         )}
         >
-            <Link href={href}>
+            <Link href={href} className='px-5 py-2.5 block'>
                 {children}
             </Link>
         </li>
