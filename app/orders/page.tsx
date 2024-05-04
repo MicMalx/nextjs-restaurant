@@ -34,15 +34,17 @@ export default async function Orders() {
         return <div>Can not load orders try again later...</div>;
     }
     return (
-        <section className='min-h-[400px]'>
-            <h2 className='my-[30px] text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
-            {orders.map((order) => (
-                <Order
-                    key={order.id}
-                    meals={order.meals}
-                    price={order.price}
-                />
-            ))}
-        </section>
+        <main>
+            <section className='min-h-[400px]'>
+                <h2 className='my-[30px] text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
+                {orders.map((order) => (
+                    <Order
+                        key={order.id}
+                        meals={order.meals}
+                        price={order.price}
+                    />
+                ))}
+            </section>
+        </main>
     );
 }

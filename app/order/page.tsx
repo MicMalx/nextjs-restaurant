@@ -18,11 +18,11 @@ export default async function Order() {
     }
 
     return (
-        <>
+        <main>
             <section>
                 <MealsList mode='order' allMeals={meals} isUserLoggedIn={true} />
             </section>
             <OrderForm />
-        </>
+        </main>
     );
 }
