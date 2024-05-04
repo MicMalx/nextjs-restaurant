@@ -24,13 +24,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {children}
                 <footer className='bg-black py-10'>
                     <h2 className='text-golden-500 font-bold text-center mb-5'>Restaurant</h2>
-                    <Image
-                        src='/icons/moon-divider.png'
-                        width={35}
-                        height={9.5}
-                        alt='moon divider image'
-                        className='mx-auto mb-5'
-                    />
+                    <div className='h-2.5 mb-5'>
+                        <Image
+                            src='/icons/moon-divider.png'
+                            width={35}
+                            height={9.5}
+                            alt='moon divider image'
+                            className='mx-auto'
+                        />
+                    </div>
                     <div className='text-golden-500 text-center'>
                         <p>Monday - Wednesday: 10AM - 10PM</p>
                         <p>Thursday - Saturday: 10AM - 11PM</p>
