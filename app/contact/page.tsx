@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <main className='text-center'>
+        <main className='text-center min-h-content my-10'>
             <section className='text-lg'>
                 <h2 className='text-2xl text-golden-700 mb-2.5'>We invite our guests:</h2>
                 <p>Monday - Wednesday: 10AM - 10PM</p>

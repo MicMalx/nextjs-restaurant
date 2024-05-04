@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function AboutUs() {
     return (
-        <main className='w-4/5 xl:w-[1200px] mx-auto'>
+        <main className='w-4/5 xl:w-[1200px] mx-auto min-h-content'>
             <h1 className='text-2xl font-bold mt-10'>About us</h1>
             <Image
                 src='/icons/section-starter.png'
@@ -11,7 +11,7 @@ export default function AboutUs() {
                 height={15}
                 className='mt-5 mb-10'
             />
-            <div className='flex flex-wrap sm:flex-nowrap gap-5'>
+            <div className='flex flex-wrap sm:flex-nowrap gap-5 mb-5'>
                 <section className='sm:basis-2/3'>
                     <p className='font-bold'>Our restaurant is a new definition of the pleasure of... taste.</p>
                     <br />

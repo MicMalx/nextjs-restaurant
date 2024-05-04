@@ -22,7 +22,7 @@ const gallerySrcArray = [
 
 export default function Offer() {
     return (
-        <main className='w-4/5 xl:w-[1200px] mx-auto'>
+        <main className='w-4/5 xl:w-[1200px] mx-auto min-h-content'>
             <h1 className='xl:text-2xl font-bold mt-10 capitalize'>Occasional parties / catering</h1>
             <Image
                 src='/icons/section-starter.png'

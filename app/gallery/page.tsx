@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Gallery() {
     return (
-        <main className='w-4/5 xl:w-[1200px] mx-auto bg-white'>
+        <main className='w-4/5 xl:w-[1200px] mx-auto bg-white min-h-content mb-10'>
             <h1 className='text-2xl font-bold mt-10'>Gallery</h1>
             <Image
                 src='/icons/section-starter.png'

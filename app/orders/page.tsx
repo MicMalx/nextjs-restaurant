@@ -34,9 +34,9 @@ export default async function Orders() {
         return <div>Can not load orders try again later...</div>;
     }
     return (
-        <main>
-            <section className='min-h-[400px]'>
-                <h2 className='my-[30px] text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
+        <main className='min-h-content'>
+            <section className='pb-8'>
+                <h2 className='my-8 text-golden-600 text-2xl font-bold text-center'>Orders History</h2>
                 {orders.map((order) => (
                     <Order
                         key={order.id}

@@ -19,6 +19,7 @@ const config: Config = {
                 'golden-700': '#b47c03',
                 'golden-800': '#aa6817',
             },
+            minHeight: { content: 'calc(100vh - 470px)' },
         },
     },
     plugins: [],

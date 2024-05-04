@@ -18,7 +18,7 @@ export default async function Order() {
     }
 
     return (
-        <main>
+        <main className='min-h-content'>
             <section>
                 <MealsList mode='order' allMeals={meals} isUserLoggedIn={true} />
             </section>
